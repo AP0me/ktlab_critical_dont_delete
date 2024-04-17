@@ -1,6 +1,6 @@
 <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $allowedCommands = ['ls', 'date', 'whoami'];  // Example of an allowlist
+        $allowedCommands = ['date', 'whoami', 'help'];  // Example of an allowlist
         $inputCommand = isset($_POST['command']) ? trim($_POST['command']) : '';
 
         // Validate if the input command is in the allowlist
