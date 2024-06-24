@@ -1,13 +1,11 @@
 <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $allowedCommands = ['date', 'whoami', 'help'];  // Example of an allowlist
+        $allowedCommands = ['help'];  // Example of an allowlist
         $inputCommand = isset($_POST['command']) ? trim($_POST['command']) : '';
 
         // Validate if the input command is in the allowlist
         if (in_array($inputCommand, $allowedCommands)) {
-            $cmd = escapeshellcmd($inputCommand); // Secure the command
-            echo "cmd: " . htmlspecialchars($cmd) . "<br>";
-            echo shell_exec($cmd);
+            echo "K3Y_T0_5UCC355";
         } else {
             echo "Command not allowed.";
         }
